@@ -1,12 +1,9 @@
 dynamic studentInfo() {
-//   // TODO 1
+  // TODO 1
 
-//   var name;
-//   var favNumber;
-//   var isPraktikan;
-String name = "Amalia Fitri Lestari";
-int favNumber = 7; // Ganti dengan angka favorit Anda
-bool isPraktikan = true;
+  var name = 'Amalia Fitri Lestari';
+  var favNumber = 3;
+  var isPraktikan = true;
 
   // End of TODO 1
   return [name, favNumber, isPraktikan];
@@ -20,7 +17,7 @@ dynamic circleArea(num r) {
 
     // TODO 2
 
-    return 0;
+    return pi * r * r;
 
     // End of TODO 2
   }
@@ -28,8 +25,13 @@ dynamic circleArea(num r) {
 
 int? parseAndAddOne(String? input) {
   // TODO 3
+  if (input == null) return null;
+  try{
+    return int.parse(input) + 1 ;
+  } catch (e) {
+    throw Exception('input harus beupa angka');
+  }
 
-  return 0;
 
   // End of TODO 3
 }
