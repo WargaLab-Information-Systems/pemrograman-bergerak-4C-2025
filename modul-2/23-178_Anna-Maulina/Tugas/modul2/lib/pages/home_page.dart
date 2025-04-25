@@ -1,15 +1,37 @@
 // pages/home_page.dart
+import 'dart:io';
 import 'package:flutter/material.dart';
 import '../models/place.dart';
 import 'detail_page.dart';
+import 'add_place_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List<Place> places = List.from(placeList);
+
+  void _navigateToAddPlace() async {
+    final newPlace = await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const AddPlacePage()),
+    );
+
+    if (newPlace != null && newPlace is Place) {
+      setState(() {
+        places.add(newPlace);
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFFEDEDED),
+      backgroundColor: const Color(0xFFEDEDED),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -20,7 +42,7 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text('Hi, User', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
-                  CircleAvatar(
+                  const CircleAvatar(
                     backgroundImage: AssetImage('images/profile.png'),
                   ),
                 ],
@@ -34,6 +56,12 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _navigateToAddPlace,
+        backgroundColor: Colors.indigo,
+        foregroundColor: Colors.white,
+        child: const Icon(Icons.add),
       ),
     );
   }
@@ -50,21 +78,22 @@ class HomePage extends StatelessWidget {
 
   Widget _horizontalList(BuildContext context) {
     return SizedBox(
-      height: 70, 
+      height: 70,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: placeList.length,
+        itemCount: places.length,
         padding: const EdgeInsets.symmetric(horizontal: 8),
         itemBuilder: (context, index) {
-          final place = placeList[index];
+          final place = places[index];
           return InkWell(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (_) => DetailPage(place: place),
-              ));
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (_) => DetailPage(place: place)),
+              );
             },
             child: Container(
-              width: 240, 
+              width: 240,
               margin: const EdgeInsets.only(right: 12),
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
@@ -82,12 +111,19 @@ class HomePage extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.asset(
-                      place.imageUrl,
-                      width: 60,
-                      height: 60,
-                      fit: BoxFit.cover,
-                    ),
+                    child: place.imageUrl.startsWith('/')
+                      ? Image.file(
+                          File(place.imageUrl),
+                          width: 60,
+                          height: 60,
+                          fit: BoxFit.cover,
+                        )
+                      : Image.asset(
+                          place.imageUrl,
+                          width: 60,
+                          height: 60,
+                          fit: BoxFit.cover,
+                        ),
                   ),
                   const SizedBox(width: 8),
                   Expanded(
@@ -131,19 +167,20 @@ class HomePage extends StatelessWidget {
   Widget _verticalList(BuildContext context) {
     return ListView.builder(
       shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(), 
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12), 
-      itemCount: placeList.length,
+      physics: const NeverScrollableScrollPhysics(),
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 12),
+      itemCount: places.length,
       itemBuilder: (context, index) {
-        final place = placeList[index];
+        final place = places[index];
         return InkWell(
           onTap: () {
-            Navigator.push(context, MaterialPageRoute(
-              builder: (_) => DetailPage(place: place),
-            ));
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => DetailPage(place: place)),
+            );
           },
           child: Container(
-            margin: const EdgeInsets.only(bottom: 16), 
+            margin: const EdgeInsets.only(bottom: 16),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(12),
@@ -151,7 +188,7 @@ class HomePage extends StatelessWidget {
                 BoxShadow(
                   color: Colors.black12,
                   blurRadius: 4,
-                  offset: Offset(0, 2),
+                  offset: const Offset(0, 2),
                 ),
               ],
             ),
@@ -162,12 +199,19 @@ class HomePage extends StatelessWidget {
                 children: [
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
-                    child: Image.asset( 
-                      place.imageUrl,
-                      width: 120,
-                      height: 120,
-                      fit: BoxFit.cover,
-                    ),
+                    child: place.imageUrl.startsWith('/')
+                      ? Image.file(
+                          File(place.imageUrl),
+                          width: 120,
+                          height: 120,
+                          fit: BoxFit.cover,
+                        )
+                      : Image.asset(
+                          place.imageUrl,
+                          width: 120,
+                          height: 120,
+                          fit: BoxFit.cover,
+                        ),
                   ),
                   const SizedBox(width: 12),
                   Expanded(
@@ -176,17 +220,14 @@ class HomePage extends StatelessWidget {
                       children: [
                         Text(
                           place.title,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 6),
-                        const Text(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis, doloribus. Eos, accusantium doloremque! Tenetur, sed.',
+                        Text(
+                          place.description,
                           maxLines: 3,
                           overflow: TextOverflow.ellipsis,
-                          style: TextStyle(fontSize: 13, color: Colors.black54),
+                          style: const TextStyle(fontSize: 13, color: Colors.black54),
                         ),
                       ],
                     ),
