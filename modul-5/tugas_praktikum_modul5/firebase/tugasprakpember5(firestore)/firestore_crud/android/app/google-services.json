@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989044310425",
+    "project_id": "agenda-crud-4921e",
+    "storage_bucket": "agenda-crud-4921e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989044310425:android:2a80f1b372bdac67cdd308",
+        "android_client_info": {
+          "package_name": "com.example.firestore_crud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxqa0lrBPQRorgpF6wMxlPSKNUV12Lxow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
