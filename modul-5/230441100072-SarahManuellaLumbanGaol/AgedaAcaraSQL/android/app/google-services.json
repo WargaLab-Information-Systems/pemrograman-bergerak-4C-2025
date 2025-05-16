@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373490808574",
+    "project_id": "agendaacara-sarah",
+    "storage_bucket": "agendaacara-sarah.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373490808574:android:e398b85ed5a49e754a97af",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLrBSfLktJzSGedwCJXXwo_EJQcd0l6GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
