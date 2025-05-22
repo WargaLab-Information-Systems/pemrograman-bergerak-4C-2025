@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "830716478394",
+    "firebase_url": "https://api-dhelia-default-rtdb.firebaseio.com",
+    "project_id": "api-dhelia",
+    "storage_bucket": "api-dhelia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830716478394:android:78b1c6ea57f99dc70c9383",
+        "android_client_info": {
+          "package_name": "com.example.health_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJmR94n0Y5rwGpSZ8FHqad5lPWFt4ywUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
