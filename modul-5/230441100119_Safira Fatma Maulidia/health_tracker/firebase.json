@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"api-safira","appId":"1:654426993263:android:2ead0ec1274ed740aad39a","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"api-safira","configurations":{"android":"1:654426993263:android:2ead0ec1274ed740aad39a","web":"1:654426993263:web:3fe0ce4ec8f05925aad39a"}}}}}}
