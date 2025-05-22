@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "160464258753",
+    "firebase_url": "https://apiamalia-default-rtdb.firebaseio.com",
+    "project_id": "apiamalia",
+    "storage_bucket": "apiamalia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160464258753:android:18bde3210f8573d35cb640",
+        "android_client_info": {
+          "package_name": "com.example.latihanmodul5"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn_qcB0fVu0c-Y9mKNZH-2b3wXMuVq03E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
