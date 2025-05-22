@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"api-dhelia","appId":"1:830716478394:android:78b1c6ea57f99dc70c9383","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"api-dhelia","configurations":{"android":"1:830716478394:android:78b1c6ea57f99dc70c9383","web":"1:830716478394:web:773d15cea5c4940a0c9383"}}}}}}
