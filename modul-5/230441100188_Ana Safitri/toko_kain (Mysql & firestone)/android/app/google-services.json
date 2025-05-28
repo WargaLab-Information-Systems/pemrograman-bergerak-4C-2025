@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "211270345956",
+    "firebase_url": "https://api-kain-default-rtdb.firebaseio.com",
+    "project_id": "api-kain",
+    "storage_bucket": "api-kain.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211270345956:android:bfcd95ee8d2ec1936078f1",
+        "android_client_info": {
+          "package_name": "com.example.toko_kain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUU5-LXihbuN0y0Drbe5wYOaHOqZ8U3u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
