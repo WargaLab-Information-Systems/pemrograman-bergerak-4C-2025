@@ -1,0 +1,29 @@
+name: modul6
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+  permission_handler: ^11.3.0
+  geolocator: ^11.0.0
+  geocoding: ^2.2.1
+  connectivity_plus: ^6.0.1
+  flutter_local_notifications: ^14.1.1
+  image_gallery_saver:
+    git:
+      url: https://github.com/knottx/image_gallery_saver.git
+      ref: knottx
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
