@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "910413990375",
+    "project_id": "fluttertokokain",
+    "storage_bucket": "fluttertokokain.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910413990375:android:918472f44003466ffb1542",
+        "android_client_info": {
+          "package_name": "com.example.flutter_tokokain"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf_iYyV-qsgQT7JqWzMWj3oKVwZ7RF9ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
