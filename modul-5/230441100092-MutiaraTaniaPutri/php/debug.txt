@@ -1,0 +1,1 @@
+{"id_jadwal":"18","tanggal":"2025-05-18","jumlah_air_ml":110,"waktu_minum":"malam hari","catatan":"setelah makan "}

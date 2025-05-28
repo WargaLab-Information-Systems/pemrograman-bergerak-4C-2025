@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"api-mtp","appId":"1:315888206158:android:78f265a0ebb4b517efde1f","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"api-mtp","configurations":{"android":"1:315888206158:android:78f265a0ebb4b517efde1f","web":"1:315888206158:web:7fedbcc878e5cf03efde1f"}}}}}}

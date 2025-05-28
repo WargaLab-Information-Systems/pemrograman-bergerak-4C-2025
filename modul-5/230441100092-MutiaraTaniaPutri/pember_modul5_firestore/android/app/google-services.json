@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "315888206158",
+    "firebase_url": "https://api-mtp-default-rtdb.firebaseio.com",
+    "project_id": "api-mtp",
+    "storage_bucket": "api-mtp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315888206158:android:78f265a0ebb4b517efde1f",
+        "android_client_info": {
+          "package_name": "com.example.tes_ini"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkxiB1JRzoI2L8drkqsSCNoNusz_PD2ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
