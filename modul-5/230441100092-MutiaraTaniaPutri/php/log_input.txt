@@ -1,0 +1,24 @@
+RAW:
+
+json_last_error: No errorRAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: 
+RAW: {"tanggal":"2025-05-18","jumlah_air_ml":300,"waktu_minum":"sore","catatan":"setelah lari sore"}
+RAW: 
+RAW: {"tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam","catatan":"setelah makan cemilan"}
+RAW: {"id_jadwal":"13","tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam hari","catatan":"setelah makan cemilan"}
+RAW: {"id_jadwal":"14","tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam hari","catatan":"setelah makan "}
+RAW: {"id_jadwal":"13","tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam hari","catatan":"setelah makan cemilan"}
+RAW: {"id_jadwal":"16","tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam hari","catatan":"setelah makan"}
+RAW: {"tanggal":"2025-05-18","jumlah_air_ml":100,"waktu_minum":"malam","catatan":"setelah makan "}
+RAW: {"id_jadwal":"13","tanggal":"2025-05-18","jumlah_air_ml":110,"waktu_minum":"malam hari","catatan":"setelah makan cemilan"}
+RAW: {"id_jadwal":"1","tanggal":"2025-05-18","jumlah_air_ml":120,"waktu_minum":"Pagi hari","catatan":"setelah sarapan"}
+RAW: {"tanggal":"2025-05-22","jumlah_air_ml":9,"waktu_minum":"8","catatan":"9"}
