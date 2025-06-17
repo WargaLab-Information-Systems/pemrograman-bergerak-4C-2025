@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "523932937655",
+    "firebase_url": "https://api-sonia-9999c-default-rtdb.firebaseio.com",
+    "project_id": "api-sonia-9999c",
+    "storage_bucket": "api-sonia-9999c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523932937655:android:ed1e26bed14118e6508c32",
+        "android_client_info": {
+          "package_name": "com.example.app_firebasecli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZY8m23EzSXjUicUDrrzltA_IkTm541Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523932937655:android:16e5abc1c68c0bd9508c32",
+        "android_client_info": {
+          "package_name": "com.ijon.todo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZY8m23EzSXjUicUDrrzltA_IkTm541Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
